@@ -13,6 +13,8 @@ public class TheNameGame {
     public String createSong(String name) {
         String sep = ", ";
         String b = "b";
+        String f = "f";
+        String m = "m";
         String x = name;
         String y = name.substring(1);
 
@@ -21,12 +23,17 @@ public class TheNameGame {
             y = name.toLowerCase();
         } else if (letter == 'b') {
             b = "";
+        } else if (letter == 'f') {
+            f = "";
+        } else if (letter == 'm') {
+            m = "";
         }
 
-        String song = x + sep + x + sep + "bo-b" + y + "\n";
-        song = song + "Banana-fana fo-f" + y + "\n";
-        song = song + "Fee-fi-mo-m" + y + "\n";
-        song = song + "brandon!";
+
+        String song = x + sep + x + sep + "bo-" + b + y + "\n";
+        song = song + "Banana-fana fo-" + f + y + "\n";
+        song = song + "Fee-fi-mo-" + m + y + "\n";
+        song = song + x + "!\n";
 
         return song;
 
